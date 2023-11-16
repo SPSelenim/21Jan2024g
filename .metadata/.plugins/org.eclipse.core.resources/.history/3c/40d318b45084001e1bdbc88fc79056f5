@@ -1,0 +1,20 @@
+package P21Jan2024.e2e;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class LoginPOM {
+	
+	
+public LoginPOM(WebDriver driver) {
+
+WebElement setUserName(String UserName)
+{
+	WebElement UserName1;
+
+	UserName1=driver.findElement(By.id("fname"));
+return UserName1;
+}
+}
+}

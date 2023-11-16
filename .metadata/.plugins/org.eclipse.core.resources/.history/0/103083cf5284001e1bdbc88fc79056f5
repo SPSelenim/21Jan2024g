@@ -1,0 +1,37 @@
+package P21Jan2024.e2e;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class LoginPOM {
+
+WebDriver ldriver=null;
+
+	public LoginPOM(WebDriver rdriver) {
+
+		ldriver=rdriver;
+}
+	
+	WebElement setUserName() {
+		WebElement UserName1;
+
+		UserName1 = ldriver.findElement(By.id("fname"));
+		return UserName1;
+	}
+
+	WebElement setUserPwd(String UserPwd) {
+		WebElement UserPwd1;
+
+		UserPwd1 = ldriver.findElement(By.id("lname"));
+		return UserPwd1;
+	}
+
+	WebElement clickDev() {
+WebElement dev1;
+		dev1 = ldriver.findElement(By.xpath("//a[@name='Development']"));
+		return dev1;
+	}
+
+		
+}

@@ -1,0 +1,10 @@
+package P21Jan2024.e2e;
+
+import org.testng.annotations.Test;
+
+public class MainApp {
+  @Test
+  public void f() {
+	  System.out.println("FIRST PROGRAM");
+  }
+}

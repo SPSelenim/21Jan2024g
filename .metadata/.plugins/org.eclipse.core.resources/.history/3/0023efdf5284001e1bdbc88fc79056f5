@@ -1,0 +1,24 @@
+package P21Jan2024.e2e;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class Login1 extends LoginBaseClass{
+  @Test
+  public void f() {
+	  System.out.println("FIRST PROGRAM");
+	LoginPOM lp=new LoginPOM(driver);
+	try
+	{
+	lp.setUserName().sendKeys(null);;
+	lp.setUserPwd("myDevPwd");
+	lp.clickDev();
+	
+	}
+	catch(Exception e)
+	{
+		System.out.println(e.getMessage() + " : Login1");
+	}
+  }
+}

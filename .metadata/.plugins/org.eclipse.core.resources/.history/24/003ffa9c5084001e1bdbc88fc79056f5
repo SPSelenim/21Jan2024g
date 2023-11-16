@@ -1,0 +1,12 @@
+package P21Jan2024.e2e;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPOM {
+	
+	
+public LoginPOM(WebDriver driver) {
+
+
+}
+}

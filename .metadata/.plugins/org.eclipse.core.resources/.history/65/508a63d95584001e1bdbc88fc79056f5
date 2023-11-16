@@ -1,0 +1,38 @@
+package P21Jan2024.e2e.Dev1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class DevPOM {
+
+WebDriver ldriver=null;
+
+	public DevPOM(WebDriver rdriver) {
+
+		ldriver=rdriver;
+}
+	
+	WebElement getUserName() {
+		WebElement UserName1;
+
+		UserName1 = ldriver.findElement(By.id("Dfname"));
+		return UserName1;
+	}
+
+	WebElement getUserPwd() {
+		WebElement UserPwd1;
+try
+{
+		UserPwd1 = ldriver.findElement(By.id("Dlname"));
+		return UserPwd1;
+}
+catch(Exception e)
+{
+	System.out.println(e.getMessage());
+}
+}
+
+	
+		
+}

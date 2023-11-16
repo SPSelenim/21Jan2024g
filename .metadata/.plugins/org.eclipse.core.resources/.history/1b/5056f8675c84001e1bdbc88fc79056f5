@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Suite">
+  <test thread-count="4" parallel="classes" name="Test">
+    <packages>
+      <package name="P21Jan2024.e2e.DevOps1"/>
+      <package name="P21Jan2024.e2e"/>
+      <package name="P21Jan2024.e2e.QA1"/>
+      <package name="P21Jan2024.e2e.Dev1"/>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

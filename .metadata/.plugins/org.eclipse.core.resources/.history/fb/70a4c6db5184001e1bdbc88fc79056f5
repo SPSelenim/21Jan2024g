@@ -1,0 +1,13 @@
+package P21Jan2024.e2e;
+
+import org.testng.annotations.BeforeClass;
+
+public class LoginBaseClass {
+	
+	@BeforeClass
+	public void Init()
+	{
+		
+	}
+
+}

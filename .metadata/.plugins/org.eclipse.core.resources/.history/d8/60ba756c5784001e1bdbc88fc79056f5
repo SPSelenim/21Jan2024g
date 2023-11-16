@@ -1,0 +1,39 @@
+package P21Jan2024.e2e.Dev1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+
+public class Dev2 extends DevBaseClass{
+ 
+	@Test
+  public void f() {
+	  System.out.println("Second PROGRAM");
+	DevPOM dp=new DevPOM(driver);
+	try
+	{
+dp.getdevUserName().sendKeys("mySecondDev");;
+		Thread.sleep(2000);
+		
+	dp.getdevUserPwd().sendKeys("mySecondDevpws");;
+	Thread.sleep(2000);
+	
+	String strAcdevelopment=driver.getCurrentUrl();
+	System.out.println(strAcdevelopment);
+	Thread.sleep(2000);
+	
+	}
+	catch(Exception e)
+	{
+		System.out.println(e.getMessage() + " : Login1");
+	}
+  }
+	
+	@AfterTest
+	public teradown()
+	{
+		driver.quit();
+	}
+}

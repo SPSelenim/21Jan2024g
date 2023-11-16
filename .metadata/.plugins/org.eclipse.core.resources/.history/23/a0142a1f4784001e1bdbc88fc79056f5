@@ -1,0 +1,16 @@
+package P21Jan2024.e2e;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class MainApp {
+  @Test
+  public void f() {
+	  System.out.println("FIRST PROGRAM");
+		System.setProperty("webdriver.gecko.driver", "D:\\Satish\\05DemoApps\\ChromeDriver\\geckodriver.exe");
+		
+		WebDriver driver = new FirefoxDriver();
+
+  }
+}
